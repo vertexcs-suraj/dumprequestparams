@@ -1,8 +1,9 @@
 var express = require('express'),
-    http = require('http')
+    http = require('http'),
+    bodyParser = require('body-parser');
 
 var app = express();
-//app.use(express.bodyParser());
+app.use(bodyParser());
 
 app.post('/details/',(req,resp)=>{
 
